@@ -16,6 +16,7 @@ Notes from [Session 715 in WWDC 2014](https://developer.apple.com/videos/wwdc/20
 ##One screen for all iOS permissions
 Send users directly to [privacy settings](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIApplication_Class/index.html#//apple_ref/c/data/UIApplicationOpenSettingsURLString):
 `[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"UIApplicationOpenSettingsURLString"]];`
+![](assets/appPrivacy.png)
 
 ##Purpose Strings
 Add purpose strings to consent dialogues (class `Privacy -` in Info keys). New Purpose strings added are:
