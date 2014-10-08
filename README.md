@@ -25,3 +25,6 @@ The Strings can be added in the Info.plist file: (to localize add strings to Loc
 
 ##SIGKILL Note
 * For iOS, any permission change sends a `SIGKILL` to your app, so the app should be ready for it at any time.
+
+##Camera permissions
+If the user denies camera permission, the camera stream blocks, and just a black screen appears. If you are using `UIImagePickerController`, best way to know about the authorization status is via `[AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo]` [authorizationStatusForMediaType:](https://developer.apple.com/library/iOs/documentation/AVFoundation/Reference/AVCaptureDevice_Class/index.html#//apple_ref/occ/clm/AVCaptureDevice/authorizationStatusForMediaType:)
